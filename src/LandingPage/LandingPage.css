@@ -1,0 +1,37 @@
+.gradient-text {
+    /* Set the background to the linear gradient */
+    background: linear-gradient(to right, rgb(255, 105, 180), rgb(75, 0, 130));
+  
+    /* Clip the background to the text's shape */
+    -webkit-background-clip: text;
+    background-clip: text;
+  
+    /* Make the text transparent to show the clipped background */
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* A fallback for browsers that do not support -webkit-text-fill-color */
+}
+.my-button {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.5s ease;
+}
+.my-button:hover {
+    background: rgba(255, 255, 255,0.5);
+    color: white;
+    transform: scale(1.1);
+}
+.moving-icon {
+    display: inline-block;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    25%  { transform: translate(10px, -10px) rotate(2deg); }
+    50%  { transform: translate(0, -20px) rotate(0deg); }
+    75%  { transform: translate(-10px, -10px) rotate(-2deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
+  
+  
+  
