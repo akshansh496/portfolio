@@ -1,0 +1,39 @@
+.slide-in-right {
+    opacity: 0; /* start invisible */
+    transform: translateX(100%); /* start off-screen right */
+    animation: slideIn 1s forwards; /* 1s duration, keep final state */
+    animation-delay: 0.2s; /* wait 2 seconds before starting */
+  }
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0); /* end at original position */
+    }
+  }
+.slide-in-left {
+    opacity: 0; /* start invisible */
+    transform: translateX(-100%); /* start off-screen right */
+    animation: slideLeft 1s forwards; /* 1s duration, keep final state */
+    animation-delay: 0.2s; /* wait 2 seconds before starting */
+  }
+  
+  @keyframes slideLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0); /* end at original position */
+    }
+  }
+.slide-in-up {
+    opacity: 0; /* start invisible */
+    transform: translateY(100%); /* start off-screen right */
+    animation: slideup 1s forwards; /* 1s duration, keep final state */
+    animation-delay: 0.2s; /* wait 2 seconds before starting */
+  }
+  
+  @keyframes slideup {
+    to {
+      opacity: 1;
+      transform: translateY(0); /* end at original position */
+    }
+  }
